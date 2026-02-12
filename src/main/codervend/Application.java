@@ -132,7 +132,6 @@ public class Application {
         totalSales = totalSales.add(price);
         salesReport.put(item.getName(), salesReport.getOrDefault(item.getName(), 0) + 1);
 
-        // Fun category messages
         String category = item.getCategory().toLowerCase();
         switch (category) {
             case "debug" -> System.out.println("🐛 Squashed. (Probably.)");
